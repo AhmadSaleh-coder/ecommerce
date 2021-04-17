@@ -7,5 +7,9 @@ import '@fortawesome/fontawesome-free/js/all.js'
 
 $(function(){
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('.add-to-cart-button').click(function() {
+        alert('This product was added to cart');
+    });
 });
 
