@@ -38,18 +38,17 @@ module.exports = {
       },
       
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../',
+        test: /\.(sa|sc|c)ss$/,
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader, 
+              options: {
+                publicPath: '../' 
+              }
             },
-          },
             'css-loader',
-
-          
-        ]
+            'sass-loader'
+          ]
       },
       
       {
@@ -95,6 +94,31 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html", //  فقط  index  و ليس index.html  هنا يجب كتابة اسم الملف مع الامتداد أي
       template: "./src/index.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "product.html", //  
+      template: "./src/product.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "checkout.html", //  
+      template: "./src/product.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "contact.html", //  
+      template: "./src/product.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "payment.html", //  
+      template: "./src/product.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "search.html", //  
+      template: "./src/product.html",
     }),
 
     new MiniCssExtractPlugin({
