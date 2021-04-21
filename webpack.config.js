@@ -103,22 +103,22 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       filename: "checkout.html", //  
-      template: "./src/product.html",
+      template: "./src/checkout.html",
     }),
 
     new HtmlWebpackPlugin({
       filename: "contact.html", //  
-      template: "./src/product.html",
+      template: "./src/contact.html",
     }),
 
     new HtmlWebpackPlugin({
       filename: "payment.html", //  
-      template: "./src/product.html",
+      template: "./src/payment.html",
     }),
 
     new HtmlWebpackPlugin({
       filename: "search.html", //  
-      template: "./src/product.html",
+      template: "./src/search.html",
     }),
 
     new MiniCssExtractPlugin({
