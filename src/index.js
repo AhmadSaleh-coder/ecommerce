@@ -35,13 +35,10 @@ $(function() {
   // عندما تتغير كمية المنتج
   $('[data-product-quantity]').on( "change",function() {
       
-      // اجلب الكمية الجديدة
       var newQuantity = $(this).val();
 
-      // ابحث عن السّطر الّذي يحتوي معلومات هذا المُنتج
       var $parent = $(this).parents('[data-product-info]');
 
-      // اجلب سعر القطعة الواحدة من معلومات المنتج
       var pricePerUnit = $parent.attr('data-product-price');
 
       // السعر الإجمالي للمنتج هو سعر القطعة مضروبًا بعددها
